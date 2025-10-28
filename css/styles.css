@@ -1,0 +1,328 @@
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: #434455;
+  background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* #region Header  */
+
+.container-header {
+  display: flex;
+  align-items: center;
+}
+.header-top-line {
+  border-bottom: 1px solid #e7e9fc;
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.top-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 117%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  display: inline-block;
+  margin-right: 76px;
+}
+.top-studio {
+  color: #2e2f42;
+}
+.header-list {
+  display: block;
+  display: flex;
+  gap: 40px;
+}
+.menu-studio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  padding: 24px 0;
+  display: block;
+}
+.menu-studio:hover,
+.menu-studio:focus {
+  color: #404bbf;
+}
+.menu-studio:active {
+  color: #404bbf;
+  text-decoration: underline;
+}
+
+.header-address {
+  font-style: normal;
+}
+.address-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.address-item:hover {
+  color: #404bbf;
+}
+.address-item:focus {
+  color: #404bbf;
+}
+
+/* #endregion Header  */
+
+/* #region  Effective Solutions for Your Business */
+#container-solut {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+}
+.title-solutions {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 107%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  width: 496px;
+}
+#effective-solutions {
+  background: #2e2f42;
+  padding: 188px 0;
+}
+
+.title-solutions {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 107%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  max-width: 496px;
+}
+.button-solutions {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  color: #fff;
+  background: #4d5ae5;
+  height: 56px;
+  min-width: 169px;
+  border: none;
+  border-radius: 4px;
+}
+.button-solutions:hover {
+  background: #404bbf;
+}
+.button-solutions:focus {
+  background: #404bbf;
+}
+
+/* #endregion  Effective Solutions for Your Business */
+
+/* #region  Advantage  */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.advantage-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.advantage-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.advantage-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.advantage-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+/* #endregion  Advantage  */
+
+/* #region  Our Team  */
+
+.container-team {
+  background: #f4f4fd;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.team-item {
+  background: #fff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-text {
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px 0;
+}
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+
+  margin-bottom: 8px;
+}
+.team-prof {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+}
+/* #endregion  Our Team  */
+
+/* #region Our Portfolio */
+
+.portfolio-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 48px;
+}
+.portfolio-text {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.portfolio-products {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.portfolio-products-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/* #endregion Section 4   Our Portfolio */
+
+/* #region Footer */
+
+.section-footer {
+  background: #2e2f42;
+  padding: 100px 0;
+}
+
+.top-logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 117%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.footer-studio {
+  color: #f4f4fd;
+}
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  max-width: 264px;
+}
+
+/* #endregion Footer */
