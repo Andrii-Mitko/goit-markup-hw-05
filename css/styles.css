@@ -15,11 +15,9 @@ p {
 }
 ul,
 ol {
-  margin: 0;
-  padding-left: 0;
-}
-ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
@@ -36,10 +34,8 @@ img {
 }
 .container {
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 /* #region Header  */
 
@@ -65,23 +61,24 @@ img {
   color: #4d5ae5;
   display: inline-block;
   margin-right: 76px;
+  padding: 24px 0;
 }
 .top-studio {
   color: #2e2f42;
 }
 .header-list {
-  display: block;
   display: flex;
+  align-items: center;
   gap: 40px;
 }
 .menu-studio {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding: 24px 0;
-  display: block;
 }
 .menu-studio:hover,
 .menu-studio:focus {
@@ -94,18 +91,18 @@ img {
 
 .header-address {
   font-style: normal;
+  margin-left: auto;
 }
 .address-item {
+  display: block;
+  padding: 24px 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
 }
-.address-item:hover {
-  color: #404bbf;
-}
-.address-item:focus {
+.address-item:hover .address-item:focus {
   color: #404bbf;
 }
 
