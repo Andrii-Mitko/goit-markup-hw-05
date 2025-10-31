@@ -102,7 +102,8 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.address-item:hover .address-item:focus {
+.address-item:hover,
+.address-item:focus {
   color: #404bbf;
 }
 
