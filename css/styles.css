@@ -137,7 +137,12 @@ img {
   background-position: center;
   background-size: cover;
 }
-
+.icon-advantage {
+  fill: #2a2a2a;
+}
+.icon-advantage:hover {
+  fill: #03a9f4;
+}
 .button-solutions {
   font-weight: 500;
   font-size: 16px;
