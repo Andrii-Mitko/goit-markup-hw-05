@@ -375,7 +375,7 @@ img {
   pointer-events: none;
 }
 
-.portfolio-item:hover .portfolio-curtain-text {
+.portfolio-item:hover {
   transform: translateY(0%);
 }
 
@@ -473,6 +473,3 @@ img {
   fill: #f4f4fd;
 }
 /* #endregion Footer */
-.portfolio-item:hover .portfolio-curtain-text {
-  transform: translateY(0%);
-}
