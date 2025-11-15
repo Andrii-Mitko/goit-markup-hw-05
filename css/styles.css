@@ -491,12 +491,9 @@ img {
   color: #fff;
   margin-bottom: 16px;
 }
-.footer-subscribe {
-  display: flex;
-  align-items: center;
-}
 .footer-form {
-  margin-right: 24px;
+  display: flex;
+  gap: 24px;
 }
 .subscribe {
   font-weight: 500;
@@ -508,15 +505,22 @@ img {
 }
 
 .button-footer {
-  width: 165px;
+  font-family: "Roboto", sans-serif;
+  min-width: 165px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   height: 40px;
   background: #4d5ae5;
   color: #fff;
   border-radius: 4px;
+  border: none;
   padding: 8px 24px;
+  margin-right: 0;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 16px;
   cursor: pointer;
 }
@@ -541,12 +545,6 @@ img {
 }
 .icon-telegram {
   fill: #fff;
-}
-.span-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
 }
 /* #endregion Footer */
 
@@ -698,11 +696,13 @@ img {
   color: rgba(46, 47, 66, 0.4);
   padding: 8px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-textarea:hover,
 .modal-textarea:focus {
   outline: none;
   border: 1px solid #4d5ae5;
+  fill: #ffffff;
 }
 .modal-checkbox {
   display: flex;
@@ -735,6 +735,7 @@ img {
   display: block;
   margin: 0 auto;
   bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   padding: 16px 32px;
   width: 169px;
@@ -742,5 +743,10 @@ img {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   cursor: pointer;
+}
+
+.button-modul:hover,
+.button-modul:focus {
+  color: #fff;
 }
 /* #endregion backdrop */
