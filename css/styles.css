@@ -503,7 +503,17 @@ img {
   color: #fff;
   margin-bottom: 16px;
 }
-
+.subscribe-input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.subscribe-input::placeholder {
+  color: #fff;
+}
 .button-footer {
   font-family: "Roboto", sans-serif;
   min-width: 165px;
@@ -610,18 +620,15 @@ img {
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  stroke-width: 1px;
-  stroke: rgba(0, 0, 0, 0.1);
   cursor: pointer;
   border: none;
   background-color: #e7e9fc;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close:hover,
 .button-close:focus {
-  background-color: #404bbf;
+  fill: #ffffff;
 }
 .close {
   display: block;
@@ -673,7 +680,7 @@ img {
 .modal-input:hover,
 .modal-input:focus {
   outline: none;
-  border: 1px solid #4d5ae5;
+  border-color: 1px solid #4d5ae5;
 }
 .modal-input {
   padding-left: 38px;
@@ -681,6 +688,9 @@ img {
   border-radius: 4px;
   width: 360px;
   height: 40px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-textarea {
   overflow-y: auto;
@@ -695,8 +705,10 @@ img {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
   padding: 8px 16px;
+  background-color: transparent;
+  outline: transparent;
+  resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-textarea:hover,
 .modal-textarea:focus {
@@ -721,9 +733,25 @@ img {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
-.modal-checkbox-user {
+.custom-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  height: 16px;
+  width: 16px;
   border-radius: 2px;
+  cursor: pointer;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-checkbox-user:checked + .modal-label-checkbox .custom-checkbox {
+  fill: #ffffff;
+  background-color: #404bbf;
+  border: 1px solid #404bbf;
 }
 .modul-policy {
   line-height: 1.33;
